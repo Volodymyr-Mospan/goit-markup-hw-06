@@ -619,7 +619,7 @@ body {
   line-height: 1.88;
 }
 
-/* ========== Підвал ========== */
+/* ==================== Підвал ==================== */
 
 .footer {
   background-color: var(--third-bg-color);
@@ -627,7 +627,7 @@ body {
   padding-bottom: 60px;
 }
 
-/* Лого в підвалі */
+/* ========== Лого в підвалі ========== */
 
 .footer .logo {
   margin-bottom: 20px;
@@ -722,6 +722,43 @@ body {
 .join-link:focus .join-icon {
   fill: var(--primary-bg-color);
 }
+
+/* ========== Підпишіться на розсилку ========== */
+
+.subscription-form {
+  display: flex;
+  margin-left: auto;
+}
+
+.subscription-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription-label {
+  color: var(--primary-bg-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.subscription-input {
+  padding: 14px 15px;
+
+  color: var(--primary-bg-color);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.subscription-submit {
+  
+}
+
 
 /* ========== Модальне віно ========== */
 
