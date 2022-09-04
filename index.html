@@ -466,32 +466,34 @@
         </button>
 
         <form class="modal-form" name="modal-form">
-          <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+          <p class="title">Залиште свої дані, ми вам передзвонимо</p>
 
-          <label for="modal-form-name">Ім'я</label>
-          <input class="modal-form-input" type="text" name="name" id="modal-form-name" />
+          <div class="modal-form-fields">
+            <label class="modal-form-label" for="modal-form-name">Ім'я</label>
+            <input class="modal-form-input" type="text" name="name" id="modal-form-name" />
 
-          <label for="modal-form-tel">Телефон</label>
-          <input class="modal-form-input" type="tel" name="tel" id="modal-form-tel" />
+            <label class="modal-form-label" for="modal-form-tel">Телефон</label>
+            <input class="modal-form-input" type="tel" name="tel" id="modal-form-tel" />
 
-          <label for="modal-form-email">Пошта</label>
-          <input class="modal-form-input" type="email" name="email" id="modal-form-email" />
+            <label class="modal-form-label" for="modal-form-email">Пошта</label>
+            <input class="modal-form-input" type="email" name="email" id="modal-form-email" />
 
-          <label for="modal-form-comment">Коментар</label>
-          <textarea
-            name="modal-form-comment-input"
-            id="modal-form-comment"
-            placeholder="Введіть текст"
-          ></textarea>
+            <label class="modal-form-label" for="modal-form-comment">Коментар</label>
+            <textarea
+              class="modal-form-comment-input"
+              name="modal-form-comment-input"
+              id="modal-form-comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
 
           <input type="checkbox" name="modal-form-offer" id="modal-form-offer" />
-          <label for="modal-form-offer">Погоджуюся з розсилкою та приймаю</label>
-          <a href="">Умови договору</a>
+          <label class="modal-form-offer" for="modal-form-offer"
+            >Погоджуюся з розсилкою та приймаю</label
+          >
+          <a class="modal-form-offer-link" href="">Умови договору</a>
 
-          <button class="modal-form-submit" type="submit">
-            Відправити
-          </button>
-
+          <button class="modal-form-submit" type="submit">Відправити</button>
         </form>
       </div>
     </div>
