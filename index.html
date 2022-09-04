@@ -438,6 +438,7 @@
               Підпишіться на розсилку
             </label>
             <input
+              name="subscription-email"
               class="subscription-input"
               type="email"
               id="subscription-email"
@@ -463,6 +464,24 @@
             <use href="./images/icon.svg#icon-closing"></use>
           </svg>
         </button>
+
+        <form class="modal-form" name="modal-form">
+          <label for="modal-form-name">Ім'я</label>
+          <input class="modal-form-input" type="text" name="name" id="modal-form-name" />
+
+          <label for="modal-form-tel">Телефон</label>
+          <input class="modal-form-input" type="tel" name="tel" id="modal-form-tel" />
+
+          <label for="modal-form-email">Пошта</label>
+          <input class="modal-form-input" type="email" name="email" id="modal-form-email" />
+
+          <label for="modal-form-comment">Коментар</label>
+          <textarea
+            name="modal-form-comment-input"
+            id="modal-form-comment"
+            placeholder="Введіть текст"
+          ></textarea>
+        </form>
       </div>
     </div>
 
