@@ -760,9 +760,6 @@ body {
 }
 
 .subscription-submit {
-  display: flex;
-  align-items: center;
-
   margin-left: 12px;
   padding: 10px 28px;
 
@@ -782,6 +779,7 @@ body {
 
 .subscriptin-icon {
   margin-left: 10px;
+  vertical-align: middle;
   width: 24px;
   height: 24px;
   fill: var(--primary-bg-color);
