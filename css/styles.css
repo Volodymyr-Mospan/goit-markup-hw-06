@@ -878,6 +878,10 @@ body {
   margin-bottom: 20px;
 }
 
+.modal-form-label {
+  margin-bottom: 10px;
+}
+
 .modal-form-name {
   margin-bottom: 4px;
   font-size: 12px;
@@ -885,9 +889,20 @@ body {
   letter-spacing: 0.01em;
 }
 
+.modal-form-icon-box {
+  position: relative;
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+
+  transform: translate(-50% -50%);
+}
+
 .modal-form-input {
   padding: 11px 41px;
-  margin-bottom: 10px;
 
   width: 100%;
 
@@ -897,13 +912,16 @@ body {
 
 .modal-form-input:hover,
 .modal-form-input:focus {
-  cursor: pointer;
-
   border: 1px solid var(--accent-color);
 }
 
 .modal-form-input:focus-visible {
   outline: none;
+}
+
+.modal-form-input:hover + .modal-form-icon,
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--accent-color);
 }
 
 .modal-form-comment-input {
@@ -919,9 +937,11 @@ body {
 
 .modal-form-comment-input:hover,
 .modal-form-comment-input:focus {
-  cursor: pointer;
-
   border: 1px solid var(--accent-color);
+}
+
+.modal-form-comment-input:focus-visible {
+  outline: none;
 }
 
 .modal-form-comment-input::placeholder {
@@ -931,9 +951,56 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-form-offer-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.modal-form-offer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
+
+.checkbox.visually-hidden {
+}
+
+.check-box-new {
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  background-image: url(../images/check-empty.svg);
+}
+
+.checkbox:checked + .check-box-new {
+  background-image: url(../images/check.svg);
+}
+
 .modal-form-offer-link {
   color: var(--accent-color);
 }
 
 .modal-form-submit {
+  display: block;
+  padding: 10px 52px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--primary-bg-color);
+
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
 }
