@@ -433,19 +433,16 @@
         </div>
 
         <form class="subscription-form" name="subscription-form">
-          <div class="subscription-field">
-            <label class="subscription-label" for="subscription-email">
-              Підпишіться на розсилку
-            </label>
+          <label class="subscription-label">
+            <span class="subscriotion-title">Підпишіться на розсилку</span>
             <input
               name="subscription-email"
               class="subscription-input"
               type="email"
-              id="subscription-email"
               placeholder="E-mail"
               autocomplete="on"
             />
-          </div>
+          </label>
 
           <button class="subscription-submit" type="submit">
             Підписатися
@@ -468,28 +465,38 @@
         <form class="modal-form" name="modal-form">
           <p class="title">Залиште свої дані, ми вам передзвонимо</p>
 
-          <div class="modal-form-fields">
-            <label class="modal-form-label" for="modal-form-name">Ім'я</label>
-            <input class="modal-form-input" type="text" name="name" id="modal-form-name" />
+          <fieldset class="modal-form-fields">
+            <label class="modal-form-label"
+              ><span class="modal-form-name">Ім'я</span
+              ><input class="modal-form-input" type="text" name="name" />
+            </label>
 
-            <label class="modal-form-label" for="modal-form-tel">Телефон</label>
-            <input class="modal-form-input" type="tel" name="tel" id="modal-form-tel" />
+            <label class="modal-form-label"
+              ><span class="modal-form-name">Телефон</span
+              ><input class="modal-form-input" type="tel" name="tel" />
+            </label>
 
-            <label class="modal-form-label" for="modal-form-email">Пошта</label>
-            <input class="modal-form-input" type="email" name="email" id="modal-form-email" />
+            <label class="modal-form-label"
+              ><span class="modal-form-name">Пошта</span
+              ><input class="modal-form-input" type="email" name="email" />
+            </label>
 
-            <label class="modal-form-label" for="modal-form-comment">Коментар</label>
-            <textarea
-              class="modal-form-comment-input"
-              name="modal-form-comment-input"
-              id="modal-form-comment"
-              placeholder="Введіть текст"
-            ></textarea>
-          </div>
+            <label class="modal-form-label"
+              ><span class="modal-form-name">Коментар</span
+              ><textarea
+                class="modal-form-comment-input"
+                name="modal-form-comment-input"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+          </fieldset>
 
-          <input type="checkbox" name="modal-form-offer" id="modal-form-offer" />
-          <label class="modal-form-offer" for="modal-form-offer"
-            >Погоджуюся з розсилкою та приймаю</label
+          <label class="modal-form-offer"
+            ><input
+              type="checkbox"
+              name="modal-form-offer"
+              value="Погоджуюся з розсилкою та приймаю Умови договору"
+            />Погоджуюся з розсилкою та приймаю</label
           >
           <a class="modal-form-offer-link" href="">Умови договору</a>
 
