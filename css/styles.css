@@ -858,16 +858,22 @@ body {
   fill: var(--accent-color);
 }
 
+/* ========== Модальна форма ========== */
+
 .modal-form {
   width: 100%;
   padding: 40px;
 }
 
-.modal-form > .title {
+.modal-form-title {
+  margin-bottom: 12px;
+  text-align: center;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  margin-bottom: 12px;
+
+  color: var(--title-text-color);
 }
 
 .modal-form-fields {
