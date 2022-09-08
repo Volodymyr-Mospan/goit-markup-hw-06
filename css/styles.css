@@ -774,7 +774,14 @@ body {
   border-radius: 4px;
   border: 0;
 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   cursor: pointer;
+}
+
+.subscription-submit:hover,
+.subscription-submit:focus {
+  background-color: var(--hero-buttom-active);
 }
 
 .subscriptin-icon {
@@ -815,6 +822,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
 
   width: 528px;
   height: 581px;
@@ -864,7 +872,6 @@ body {
 
 .modal-form {
   width: 100%;
-  padding: 40px;
 }
 
 .modal-form-title {
@@ -886,11 +893,13 @@ body {
   margin-bottom: 20px;
 }
 
-.modal-form-label {
-  margin-bottom: 10px;
+.modal-form-label + .modal-form-label {
+  display: block;
+  margin-top: 10px;
 }
 
 .modal-form-name {
+  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -911,10 +920,11 @@ body {
 }
 
 .modal-form-input {
+  height: 40px;
   padding: 11px 41px;
 
   width: 100%;
-
+  font-size: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -936,12 +946,14 @@ body {
 }
 
 .modal-form-comment-input {
+  display: block;
   padding: 12px 16px;
 
   resize: none;
   width: 100%;
   height: 120px;
 
+  font-size: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -988,16 +1000,28 @@ body {
 
   cursor: pointer;
   background-image: url(../images/check-empty.svg);
+  border-radius: 3px;
 
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .check-box-new {
   background-image: url(../images/check.svg);
+  background-size: contain;
+}
+
+/* .check-box-new:hover, */
+.checkbox:focus + .check-box-new {
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
 .modal-form-offer-link {
   color: var(--accent-color);
+}
+
+.modal-form-offer-link:hover,
+.modal-form-offer-link:focus {
+  text-decoration: none;
 }
 
 .modal-form-submit {
