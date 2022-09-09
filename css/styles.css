@@ -893,8 +893,11 @@ body {
   margin-bottom: 20px;
 }
 
-.modal-form-label + .modal-form-label {
+.modal-form-label {
   display: block;
+}
+
+.modal-form-label + .modal-form-label {
   margin-top: 10px;
 }
 
@@ -907,6 +910,7 @@ body {
 }
 
 .modal-form-icon-box {
+  display: block;
   position: relative;
 }
 
